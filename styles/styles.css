@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     padding: 0;
     margin: 0;
@@ -51,6 +59,13 @@ footer{
     width: 100vw;
     font-family: "Open Sans";
     color: #fff;
+    left: 0;
+    height: auto;
+    position: absolute;
+    padding:5px 0;
+    width: 100%;
+    bottom: 1;
+    min-height: 60px;
 }
 .footer-content{
     display: flex;
@@ -95,7 +110,7 @@ footer{
 }
 .footer-bottom{
 background: #4e4e4e;
-width: 100vw;
+width: 100%;
 padding: 20px 0;
 text-align: center;
 }
@@ -109,15 +124,6 @@ text-align: center;
     opacity: .4;
     font-weight: 200;
 }
-footer {
-    left: 0;
-    height: auto;
-    bottom: 0;
-    padding:5px 0;
-    position: absolute;
-    width: 100%;
-  }
-
 /*HEADER section*/
 header {
     padding: 15px;
@@ -125,4 +131,8 @@ header {
     position: relative;
     background-color: #4e4e4e;
     color: #ffffff;
+}
+.space {
+    min-height: 10%;
+    margin-bottom: 0;
 }
